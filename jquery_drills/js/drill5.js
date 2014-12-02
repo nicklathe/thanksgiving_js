@@ -1,9 +1,22 @@
 $(function(){
 
-
-
-
     console.log('The dom is ready! (drill 5)');
+
+    // two separate switch statements. first on who, then what
+    $("#doIt").on("click", function(){
+        var who = $("#whoDo").val();
+        var what = $("#whatDo").val();
+        if(!who || !what){
+            alert("Please make a selection from drop-down menus");
+        };
+        
+        var items;
+        switch(who);
+
+        case "even":
+            items = 
+    });
+
 
     //shuffle shapes on first load
     shuffleShapes();
